@@ -1,4 +1,4 @@
-**Boletos_DDA**
+<h1>**Boletos_DDA**</h1>
 
-Sistema de criação de linha digitavel, apartir de informações do arquivo '.txt' do Banco ITAU
-Criação dos boletos em PDF
+<p>Sistema de criação de linha digitavel, apartir de informações do arquivo '.txt' do Banco ITAU <br>
+Criação dos boletos em PDF</p>
