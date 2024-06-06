@@ -1,0 +1,28 @@
+INFO:root:Arquivo c:\Users\Higor\Documents\ret\caminho\VS04123A (1).RET foram realizadas um total de 162 boletos
+INFO:root:Arquivo c:\Users\Higor\Documents\ret\caminho\VS04123B.RET foram realizadas um total de 15 boletos
+INFO:root:Arquivo c:\Users\Higor\Documents\ret\caminho\VS04123C.RET foram realizadas um total de 16 boletos
+INFO:root:Arquivo c:\Users\Higor\Documents\ret\caminho\VS07123A.RET foram realizadas um total de 200 boletos
+INFO:root:Arquivo c:\Users\Higor\Documents\ret\caminho\VS07123B.RET foram realizadas um total de 207 boletos
+
+
+
+
+
+                            onPressed: () async {
+                              try {
+                                //RECUPERANDO MOTORISTA
+                                await moverDados('QuarentenaCarreta',
+                                    'SaidaCarreta', dts[index]);
+                                //RECUPERANDO DEVOLUÇÕES
+
+                                // Ação adicional ao pressionar o botão "+" dentro do Card
+                                sucesso(context, "DADOS MOVIDOS COM SUCESSO!");
+                                Navigator.of(context)
+                                    .pushReplacementNamed('/saidaCarreta');
+                                _removerDT(index);
+                              } catch (error) {
+                                print(error);
+                                erro(context,
+                                    "Não foi possivel recuperar dados!");
+                              }
+                            },
